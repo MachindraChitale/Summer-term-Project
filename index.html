@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello! I'm [Machindra Chitale], a [Full Stack Devoloper].</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>[Hello! I am Machindra Hausrao Chitale, currently pursuing a Bachelor of Computer Applications (BCA) at Ajeenkya D Y Patil University.
+        My academic journey has fostered a deep passion for technology and programming,
+        and I have developed strong skills in several programming languages, including Java, C, and C++. Additionally, 
+        I have a solid understanding of MySQL for database management.]</p>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>I am constantly eager to learn and take on new challenges that push the
+            boundaries of my knowledge and skills.
+            Whether it's working on a new project, learning a new technology, or solving a complex problem, 
+            I am always up for the task. In my spare time, I enjoy working on personal coding projects,
+            exploring new technological trends, and enhancing my technical expertise.</p>
+        </div>
+        <div class="project">
+            <h3>Portfolio website</h3>
+            <p>Welcome to the professional portfolio of Machindra Hausrao Chitale, 
+            a dedicated and passionate BCA student at Ajeenkya D Y Patil University.
+            This website is a showcase of my skills, projects, 
+            and experiences in the field of computer applications. 
+            With a strong foundation in programming languages such as Java, C, and C++, along with proficiency in MySQL,
+            I am excited to share my journey and accomplishments with you.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Machindra Chitale" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="machindra.test7@gmail.com" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="Hey Everyone" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 [Machindra Chitale]. All rights reserved.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#home {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#projects .project {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    margin-bottom: 0.5rem;
+}
+
+#contact form input,
+#contact form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+#contact form button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Message sent!');
+});
